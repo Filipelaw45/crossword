@@ -59,6 +59,12 @@ header{
     cursor: pointer;
 }
 
+input:focus, button:focus{
+    border: 2px solid #1c1c1c;
+    outline: none;
+    background-color: #FFFC03;
+}
+
 .check-container{
     display: flex;
     align-items: center;
