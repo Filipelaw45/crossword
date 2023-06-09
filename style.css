@@ -2,6 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: #22272E;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #crossword{
@@ -14,7 +29,8 @@
 
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 5rem;
@@ -27,20 +43,34 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid #22272E;
 }
 
 .cross{
-    background-color: black;
+    background-color: #22272E;
     color: white;
 }
 
 #check{
-    padding: .7rem;
-    background-color: green;
-    border: 1px solid black;
+    padding: .7rem 1rem;
+    background-color: #347D39;
+    border: 1px solid #22272E;
     border-radius: .4rem;
     cursor: pointer;
+}
+
+.check-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+#tips{
+    margin-bottom: 1rem;
+    width: 400px;
+    height: 400px;
+    padding: .4rem;
 }
 
 p{
@@ -50,12 +80,13 @@ p{
 
 .letter{
     background-color: white;
+    color: black;
 }
 
 .green{
-    background-color: green;
+    background-color: #347D39;
 }
 
 .red{
-    background-color: red;
+    background-color: #E04849;
 }

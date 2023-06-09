@@ -22,7 +22,7 @@ const crosswords = [
             [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']  
         ],
 
-        answer: [
+        clue: [
             '1 - Ave facilmente encontrada nas cidades',
             '2 - Raça de cachorros que a Cruela queria fazer roupas',
             '3 - Eae meu ...',
@@ -52,7 +52,7 @@ const crosswords = [
             [' ', ' ', ' ', ' ', 'S', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']  
         ],
 
-        answer: [
+        clue: [
             '1 - Animal mais fofo do mundo',
             '2 - Filo de animais invertebrados que possuem exoesqueleto',
             '3 - Nome popular dado pra uma briga/discursão',
@@ -81,7 +81,7 @@ const crosswords = [
             [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']  
         ],
 
-        answer: [
+        clue: [
             '1 - NYAN! Ichi Ni San Nyaa ....',
             '2 - A mais numerosa ordem de mamíferos com placenta',
             '3 - Espécies que nascem e se reproduzem através de ovos',
@@ -92,7 +92,7 @@ const crosswords = [
     }
 ]
 
-const {challenge, answer} = crosswords[Math.floor(Math.random() * crosswords.length)]
+const {challenge, clue} = crosswords[Math.floor(Math.random() * crosswords.length)]
 
 challenge.forEach((row, rowIndex) => {
 
@@ -116,7 +116,7 @@ challenge.forEach((row, rowIndex) => {
     })
 })
 
-answer.forEach(el =>{
+clue.forEach(el =>{
     let p = document.createElement('p')
     p.textContent = el
     tips.appendChild(p)
